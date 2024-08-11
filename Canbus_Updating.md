@@ -11,9 +11,6 @@
 ## Whats Required?
 - Cartographer Probe
 - USB-A to JST-PH Cable
-![image-1](https://github.com/user-attachments/assets/1c082c5d-44ff-43e1-b1bf-f70b4249a490)
-
-  or
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
 
 ## Index
