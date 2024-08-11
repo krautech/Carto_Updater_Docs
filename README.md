@@ -11,7 +11,8 @@
 - Cartographer Probe
 - Ferrous Tweezers
 - USB-A to JST-PH Cable (For USB or DFU Mode Flashing)
-![image](https://github.com/user-attachments/assets/a81270bc-889d-40b3-a41a-4b7c5886b552)
+![image-1](https://github.com/user-attachments/assets/1c082c5d-44ff-43e1-b1bf-f70b4249a490)
+
 
   or
 - Canbus to JST-PH Cable (For Katapult Canbus Flashing)
@@ -28,13 +29,14 @@
 - This should be seen as a last resort and should only be neccasary when Katapult flashing is unavailable for whatever reason.
 - DFU Mode (Device Firmware Upgrade Mode) is STM's bootloader thats apart of the STM32 chip included on cartographer probes. Its next to impossible to make this mode fail. However getting the chip into DFU mode can be a challenge as it requires touching the **boot0** and **reset** pads on the cartographer PCB in the correct manner.
 
-![image](https://github.com/user-attachments/assets/c154160b-941e-4243-aa10-da344a3baadc)
+![image](https://github.com/user-attachments/assets/b9d2581f-9b64-4e61-bc7f-e3382b0155ad)
+
 
 
 ## Whats Required?
 - USB-A to JST-PH Cable
 - Cartographer Probe
-- Ferrous Tweezers
+- Conductive (Metal) Tweezers
   
 ## Step 1) Enter DFU Mode
 - DFU mode is relatively simple to enter, but harder in practice. With cartographer plugged in via USB, touch the **boot0** (1) and **reset** (2) pads. This will put the device in DFU mode.
@@ -44,7 +46,8 @@
 
 > [!NOTE]
 > via SSH use command `lsusb | grep "DFU"` to find if the device is in **DFU Mode**
-> ![image](https://github.com/user-attachments/assets/33e4a0b5-a635-4dc3-95a4-bbb866f91882)
+![Screenshot 2024-08-11 125127](https://github.com/user-attachments/assets/5996588d-1049-458f-8aa4-82894c26168f)
+
 
 
 ### PCB Cover
@@ -60,18 +63,24 @@
 - SSH into your host device that cartographer is plugged into and in DFU mode from step #1.
 - Run command `bash <(wget -qO - apdm.tech/cartographer/scripts/beta/firmware_updater.sh)`
 
-![image](https://github.com/user-attachments/assets/aabfb78b-6bc5-46a0-8306-c0d31f37d9ff)
-![image](https://github.com/user-attachments/assets/1b1754df-2ede-46d4-8982-aea4168be415)
+![Screenshot 2024-08-11 130200](https://github.com/user-attachments/assets/b49c213b-cd06-44aa-8fb4-9989e4994957)
+![Screenshot 2024-08-11 130404](https://github.com/user-attachments/assets/1a93eb97-8dff-446b-af7b-1fdf8dd7e38f)
+
 > [!NOTE]
 > Choose #1 if faced with the image below to use cartographer via canbus at 1M bitrate.
 > 
 > Choose #2 if you will be using cartographer via USB
 
-![image](https://github.com/user-attachments/assets/55c93214-0013-46bc-914e-b172774baa33)
+![Screenshot 2024-08-11 130422](https://github.com/user-attachments/assets/6c187585-f4c2-4de6-965b-f12d873a9f6c)
+
 
 Once flashed, you will see the image below. This is a successful flash and youre all finished.
-![image](https://github.com/user-attachments/assets/d79d77cc-fef5-4042-9f5f-9a2f04cec547)
+![Screenshot 2024-08-11 130616](https://github.com/user-attachments/assets/3c2caf92-916d-4180-a885-cbb6964a3133)
+
 
 ## Step 3) Done
 - If you flashed for canbus, unplug cartographer and plug in via canbus
 - If you flashed for usb, power cycle your device.
+
+## Troubleshooting
+
