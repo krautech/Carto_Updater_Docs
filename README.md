@@ -23,6 +23,33 @@
 - [DFU Updating](#dfu-updating)
 - [STLink Updating](#) - Coming Soon
 
+> [!NOTE]
+> Using the scripts below, you may need to use the **Install Prerequisites** option first to make sure everything is configured prior to flashing.
+
+# CANBus Katapult Updating
+
+## Step 1) Get Your UUID
+This method requires prior knowledge of your **CANBUS UUID**. 
+
+This should have been supplied to you in your hardware box if purchased (insert date).
+
+If you do not have your UUID. Visit (HERE) to get it.
+
+The script will detect your UUID if your UUID is inside your **printer.cfg** somewhere under `[scanner]` if it doesnt detect, you can manually enter it.
+
+![Screenshot 2024-08-11 141421](https://github.com/user-attachments/assets/612dec98-50ab-4ab6-9d61-bc465a7cf411)
+
+## Step 2) Choose Firmware to Flash
+> [!NOTE]
+> Your CANBUS bitrare (if configured on your host device) should be detected and displayed. You should flash your cartographer with MATCHING bitrate firmware.
+
+You can pick any of these, however to remain detected you should match your bitrare. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
+![Screenshot 2024-08-11 141443](https://github.com/user-attachments/assets/6ad85f9a-3aba-466b-b483-e2ff23550a71)
+
+# Step 3) Done
+![Screenshot 2024-08-11 141507](https://github.com/user-attachments/assets/0fb24c99-d36d-4ce2-9846-48c99d4eb952)
+
+
   
 # DFU Updating
 ## What is DFU 
@@ -73,12 +100,11 @@
 
 ![Screenshot 2024-08-11 130422](https://github.com/user-attachments/assets/6c187585-f4c2-4de6-965b-f12d873a9f6c)
 
-
+## Step 3) Done
 Once flashed, you will see the image below. This is a successful flash and youre all finished.
 ![Screenshot 2024-08-11 130616](https://github.com/user-attachments/assets/3c2caf92-916d-4180-a885-cbb6964a3133)
 
-
-## Step 3) Done
+## Step 4) Now What?
 - If you flashed for canbus, unplug cartographer and plug in via canbus
 - If you flashed for usb, power cycle your device.
 
