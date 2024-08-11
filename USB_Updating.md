@@ -29,13 +29,17 @@
 - I've created a script that will quickly flash the correct firmware for your device. It simplifies the process so you dont have to worry about which firmware you need to download etc.
 - SSH into your host device that cartographer is plugged into.
 - Run command `bash <(wget -qO - apdm.tech/cartographer/scripts/beta/firmware_updater.sh)`
+![Screenshot 2024-08-11 144859](https://github.com/user-attachments/assets/b06e734b-d335-4073-9407-be60ec8bd17b)
+
 
 ## Step 3) Choose Firmware to Flash
 > [!NOTE]
 > If you plan on using CANBUS, Your CANBUS bitrate (if configured on your host device) should be detected and displayed. You should flash your cartographer with MATCHING bitrate firmware.
 
 You can pick any of these, however to remain detected you should match your bitrare. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
-![Screenshot 2024-08-11 141443](https://github.com/user-attachments/assets/6ad85f9a-3aba-466b-b483-e2ff23550a71)
+![Screenshot 2024-08-11 144910](https://github.com/user-attachments/assets/dfb64682-28c7-4a4c-a9fe-67649d70bfff)
+
 
 # Step 3) Done
-![Screenshot 2024-08-11 141507](https://github.com/user-attachments/assets/0fb24c99-d36d-4ce2-9846-48c99d4eb952)
+![Screenshot 2024-08-11 144929](https://github.com/user-attachments/assets/6920bdbd-2ee7-4947-97f1-c5a623471898)
+
