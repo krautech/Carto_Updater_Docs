@@ -29,7 +29,7 @@
 - I've created a script that will quickly flash the correct firmware for your device. It simplifies the process so you dont have to worry about which firmware you need to download etc.
 - SSH into your host device that cartographer is plugged into.
 - Run command `bash <(wget -qO - apdm.tech/cartographer/scripts/beta/firmware_updater.sh)`
-- 
+
 ## Step 3) Get Your UUID
 This method requires prior knowledge of your **CANBUS UUID**. 
 
