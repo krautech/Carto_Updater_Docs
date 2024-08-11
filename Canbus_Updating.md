@@ -45,7 +45,7 @@ The script will detect your UUID if your UUID is inside your **printer.cfg** som
 > [!NOTE]
 > Your CANBUS bitrare (if configured on your host device) should be detected and displayed. You should flash your cartographer with MATCHING bitrate firmware.
 
-You can pick any of these, however to remain detected you should match your bitrare. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
+You can pick any of these, however to remain detected you should match your bitrate. You can flash USB if youd like to use cartographer via USB however, as bitrate doesnt matter.
 ![Screenshot 2024-08-11 141443](https://github.com/user-attachments/assets/6ad85f9a-3aba-466b-b483-e2ff23550a71)
 
 # Step 3) Done
